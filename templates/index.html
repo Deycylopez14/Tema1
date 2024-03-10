@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexer Tester</title>
+    <title>Analizador de Deycy</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Lexer Tester</h1>
-    <div class="input-container">
+    <div class="container">
+        <h1>Analizador</h1>
         <textarea id="code" rows="4" cols="50"></textarea>
-        <button onclick="analyzeCode()">Analizar codigo</button>
+        <button onclick="analyzeCode()">Analizar mi Código</button>
     </div>
     <div id="resultContainer"></div> 
     <script>
@@ -31,7 +31,6 @@
               return response.text();  
           })
           .then(data => {
-          
               document.getElementById('resultContainer').innerHTML = data;
           })
           .catch(error => console.error('Error:', error));

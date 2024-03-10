@@ -36,7 +36,7 @@ def lexer():
 
     print("Code:", code)
     print("Tokens:", tokens)
-    print("Resultado Sintáctico:", resultado_sintactico)
+    print("Resultado del Sintáctico:", resultado_sintactico)
     print("Debug Messages:", debug_messages)
 
     if resultado_sintactico["status"] == "success":
